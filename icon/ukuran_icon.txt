@@ -1,0 +1,30 @@
+TOKOPEDIA
+==========
+icon category
+original:100x100px
+scaled:24x24px
+
+product
+original:200x200px
+scaled:64x64px
+
+original:200x
+scaled:190x
+
+40x
+16px
+
+12x12px
+
+120x
+
+220x
+
+BANER
+750x252 
+mobile: scaled 283x95
+
+PRODUCT on HP
+200x -> scaled 88x88
+tokopedia
+favicon:16px

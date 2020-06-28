@@ -1,0 +1,13 @@
+7-3-2020
+AOuth 2.0
+- OAuth
+https://en.wikipedia.org/wiki/OAuth
+
+- The OAuth 2.0 Authorization Framework
+https://tools.ietf.org/html/rfc6749
+
+- The OAuth 2.0 Authorization Framework: Bearer Token Usage
+https://tools.ietf.org/html/rfc6750
+
+Memahami OAuth 2.0 (API Security)
+https://medium.com/codelabs-unikom/memahami-oauth-2-0-api-security-9376bc3a307b

@@ -1,0 +1,140 @@
+//// -- LEVEL 1
+//// -- Tables and References
+
+// Creating tables
+Table user {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  address text
+  email varchar
+  full_name varchar
+  password varchar
+  phone_number varchar
+  username varchar [not null]
+
+}
+
+Table book_category {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  code varchar
+  name varchar
+}
+
+Table book {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  author_name varchar
+  book_status varchar
+  isbn varchar
+  price float8
+  publication_date timestamp
+  synopsis text
+  title varchar
+  book_category_id int
+}
+Ref: book.book_category_id > book_category.id
+
+Table cart {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  user_id int
+}
+Ref: cart.user_id > user.id
+
+Table cart_detail {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  book_id int
+  cart_id int
+}
+Ref: cart_detail.book_id > book.id
+Ref: cart_detail.cart_id > cart.id
+
+Table favorite_book {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  user_id int
+}
+Ref: favorite_book.user_id > user.id 
+
+Table favorite_book_detail {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  book_id int
+  favorite_book_id int
+}
+Ref: favorite_book_detail.favorite_book_id > favorite_book.id
+
+Table transaction {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  invoice_number varchar
+  payment_method varchar
+  payment_time timestamp
+  receipt_image_url varchar
+  transaction_status varchar
+  user_id int
+}
+Ref: transaction.user_id > user.id
+
+Table transaction_detail {
+  id int [pk, increment] // auto-increment
+  created_by varchar
+  created_time timestamp
+  updated_by varchar
+  updated_time timestamp
+  status varchar
+  price float8
+  book_id int
+  cart_detail_id int
+  transaction_id int
+}
+Ref: transaction_detail.cart_detail_id > cart_detail.id
+Ref: transaction_detail.transaction_id > transaction.id
+
+Table user_role {
+  username varchar
+  role_name varchar
+}
+Ref: user_role.username > user.username
+Ref: user_role.role_name > role.role_name
+
+Table role {
+  role_name varchar
+}
+
+
+

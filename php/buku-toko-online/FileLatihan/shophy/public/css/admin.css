@@ -1,0 +1,110 @@
+body {
+   background: #f1f4f7;
+   padding-top: 50px;
+}
+a{
+   color: #30a5ff;
+}
+
+/* ------------- Menu bar ------------- */
+.user-menu {
+   display: inline-block;
+   margin-top: 14px;
+   margin-right: 10px;
+   float: right;
+   list-style: none;
+   padding: 0;
+}
+.user-menu a{
+   color: #fff;
+}
+
+/* ------------- Sidebar ------------- */
+.sidebar{
+   margin: 0;
+   padding: 10px 0 0 0;
+}
+.sidebar i{
+   width: 25px;
+}
+.sidebar .active a{
+   background: #30a5ff;
+   color: #fff;
+}
+@media (max-width: 768px) {
+   .sidebar{
+      display: none;
+      background: #fff;
+      margin-bottom: 10px;
+   }
+}
+@media (min-width: 768px) {
+   .sidebar {
+      display: block;
+        position: fixed;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      overflow-x: hidden;
+      overflow-y: auto; 
+      background: #fff;
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, .05);
+   }
+   .navbar-header {
+      width: 100%;
+   }
+}
+
+/* ------------- Breadcrumbs -------------  */
+.breadcrumb {
+   border-radius: 0;
+   padding: 10px 15px;
+   background: #e9ecf2;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+   margin: 0 ;
+}
+
+/* ------------- Page Header -------------  */
+h2.page-header{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   border-bottom: 0;
+}
+h3.page-header{
+   margin-top: 0;
+}
+
+/* ------------- Panel Widget -------------  */
+.panel-blue { background: #30a5ff; color: #30a5ff; }
+.panel-teal { background: #1ebfae; color: #1ebfae; }
+.panel-orange { background: #ffb53e; color:  #ffb53e; }
+.panel-red { background: #f9243f; color: #f9243f; }
+.no-padding {
+   padding: 0; 
+   margin: 0;
+}
+.widget-left {
+   font-size: 40px;
+   height: 80px;
+   padding-top: 15px;
+   text-align: center;
+   color: #fff;
+}
+.widget-right {
+   text-align: right;
+   padding-top: 10px;
+   height: 80px;
+   background: #fff;
+   border-radius: 0 3px 3px 0;
+}
+.large{
+   font-size: 2em;
+}
+.text-muted {
+   color: #9fadbb;
+}
+.panel-default{
+   border: none;
+   border-radius: 3px;
+}

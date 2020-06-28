@@ -1,0 +1,4 @@
+[13-Dec-2016 15:06:39 Europe/Berlin] PHP Notice:  Undefined variable: DEVELOPMENT_ENVIRONMET in D:\xampp\htdocs\framework\public\index.php on line 11
+[13-Dec-2016 15:07:17 Europe/Berlin] PHP Notice:  Undefined variable: DEVELOPMENT_ENVIRONMET in D:\xampp\htdocs\framework\public\index.php on line 11
+[13-Dec-2016 15:07:49 Europe/Berlin] PHP Notice:  Undefined variable: DEVELOPMENT_ENVIRONMET in D:\xampp\htdocs\framework\public\index.php on line 11
+[10-Jan-2017 13:12:00 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting '{' in D:\xampp\htdocs\framework\application\controllers\produkController.php on line 3

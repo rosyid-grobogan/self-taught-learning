@@ -1,0 +1,9 @@
+body {
+   background: #f1f4f7;
+   padding-top: 50px;
+}
+.panel-default .panel-heading {
+   background: #fff;
+   border-bottom: 1px solid #eee;
+   color: #5f6468;
+}
